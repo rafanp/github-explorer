@@ -7,7 +7,7 @@
 
 </p>
 <h1 align="center">
-    <img alt="Github Explorer" title="#Github Explorer" src="./assets/github-explorer.png" />
+    <img alt="Github Explorer" title="#Github Explorer" src=".src/assets/github-explorer.png" />
 </h1>
 
 <h4 align="center">
