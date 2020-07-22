@@ -10,8 +10,8 @@
 
   <img src="https://img.shields.io/static/v1?logo=react&message=React&color=7159c1&style=for-the-badge&logo=react"/>
 
-  <img src="https://img.shields.io/static/v1?message=React&color=7159c1&style=for-the-badge&logo=react"/>
-  <img src="https://img.shields.io/static/v1?label=React&style=for-the-badge&logo=react"/>
+  <img src="https://img.shields.io/static/v1?label= &message=React&color=7159c1&style=for-the-badge&logo=react"/>
+
 
 
 </p>
