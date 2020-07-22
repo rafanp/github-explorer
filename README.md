@@ -11,11 +11,11 @@
   <img src="https://img.shields.io/static/v1?logo=react&message=React&color=7159c1&style=for-the-badge&logo=react"/>
  -->
 
-  <img src="https://img.shields.io/static/v1?label=&message=React&color=7159c1&style=for-the-badge&logo=react"/>
+  <img src="https://img.shields.io/static/v1?label=&message=React&color=61DAFB&style=for-the-badge&logo=react"/>
 
-  <img src="https://img.shields.io/static/v1?label=&message=Typescript&color=7159c1&style=for-the-badge&logo=typescript"/>
+  <img src="https://img.shields.io/static/v1?label=&message=Typescript&color=007ACC&style=for-the-badge&logo=typescript"/>
 
-  <img src="https://img.shields.io/static/v1?label=&message=Javascript&color=7159c1&style=for-the-badge&logo=javascript"/>
+  <img src="https://img.shields.io/static/v1?label=&message=Javascript&color=F7DF1E&style=for-the-badge&logo=javascript"/>
 
 
 </p>
@@ -82,23 +82,16 @@ O layout da aplicação está disponível no Figma:
 
 ## 🚀 Como executar o projeto
 
-Este projeto é divido em três partes:
-1. Backend (pasta server)
-2. Frontend (pasta web)
-3. Mobile (pasta mobile)
-
-💡Tanto o Frontend quanto o Mobile precisam que o Backend esteja sendo executado para funcionar.
-
 ### Pré-requisitos
 
 Ambiente React configurado
 
-#### 🎲 Rodando o Backend (servidor)
+#### 🎲 Rodando o projeto
 
 ```bash
 
 # Clone este repositório
-$ git clone git@github.com:tgmarinho/README-ecoleta.git
+$ git clone https://github.com/rafanp/github-explorer.git
 
 # Instale as dependências
 $ yarn
