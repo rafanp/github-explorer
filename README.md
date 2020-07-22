@@ -4,11 +4,8 @@
 
   <img alt="Typescript" src="https://img.shields.io/badge/-Typescript-blue">
 
-  <img src="https://img.shields.io/static/v1?label=Blog&message=Javascript&color=7159c1&style=for-the-badge&logo=react"/>
+  <img src="https://img.shields.io/static/v1?&message=React&color=7159c1&style=for-the-badge&logo=react"/>
 
-  <img alt= "React" src="https://simpleicons.org/icons/react.svg"> React
-
-  <img src="https://img.shields.io/static/v1?label=Blog&message=React&color=7159c1&style=for-the-badge&logo=[react](https://simpleicons.org/icons/react.svg)"/>
 
 
 </p>
