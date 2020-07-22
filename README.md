@@ -73,9 +73,9 @@ O layout da aplicação está disponível no Figma:
 ### Web
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Github explorer" title="#Github explorer" src="./src/assets/github-explorer" width="400px">
+  <img alt="Github explorer" title="#Github explorer" src="./src/assets/github-explorer.png" width="400px">
 
-  <img alt="Github explorer" title="#Github explorer" src="./src/assets/github-explorer2" width="400px">
+  <img alt="Github explorer" title="#Github explorer" src="./src/assets/github-explorer2.png" width="400px">
 </p>
 
 ---
