@@ -11,11 +11,11 @@
   <img src="https://img.shields.io/static/v1?logo=react&message=React&color=7159c1&style=for-the-badge&logo=react"/>
  -->
 
-  <img src="https://img.shields.io/static/v1?label=&message=React&color=61DAFB&style=for-the-badge&logo=react"/>
+  <img src="https://img.shields.io/static/v1?label=&message=React&color=7159c1&style=for-the-badge&logo=react"/>
 
   <img src="https://img.shields.io/static/v1?label=&message=Typescript&color=007ACC&style=for-the-badge&logo=typescript"/>
 
-  <img src="https://img.shields.io/static/v1?label=&message=Javascript&color=F7DF1E&style=for-the-badge&logo=javascript"/>
+  <img src="https://img.shields.io/static/v1?label=&message=Javascript&color=7159c1&style=for-the-badge&logo=javascript"/>
 
 
 </p>
