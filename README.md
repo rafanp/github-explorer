@@ -1,6 +1,6 @@
 <p align="center">
 
-  <img alt="React" src="https://img.shields.io/badge/-React-%2361DAFB">
+<!--   <img alt="React" src="https://img.shields.io/badge/-React-%2361DAFB">
 
   <img alt="Typescript" src="https://img.shields.io/badge/-Typescript-blue">
 
@@ -9,9 +9,13 @@
   <img src="https://img.shields.io/static/v1?logo=react&message=logo=react&React&color=7159c1&style=for-the-badge&logo=react"/>
 
   <img src="https://img.shields.io/static/v1?logo=react&message=React&color=7159c1&style=for-the-badge&logo=react"/>
+ -->
 
   <img src="https://img.shields.io/static/v1?label=&message=React&color=7159c1&style=for-the-badge&logo=react"/>
 
+  <img src="https://img.shields.io/static/v1?label=&message=Typescript&color=7159c1&style=for-the-badge&logo=typescript"/>
+
+  <img src="https://img.shields.io/static/v1?label=&message=Javascript&color=7159c1&style=for-the-badge&logo=javascript"/>
 
 
 </p>
