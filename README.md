@@ -1,13 +1,19 @@
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/tgmarinho/README-ecoleta?color=%2304D361">
-
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/tgmarinho/README-ecoleta">
 
   <img alt="React" src="https://img.shields.io/badge/-React-%2361DAFB">
 
+  <img alt="Typescript" src="https://img.shields.io/badge/-Typescript-blue">
+
+  <img src="https://img.shields.io/static/v1?label=Blog&message=Javascript&color=7159c1&style=for-the-badge&logo=react"/>
+
+  <img alt= "React" src="https://simpleicons.org/icons/react.svg"> React
+
+  <img src="https://img.shields.io/static/v1?label=Blog&message=React&color=7159c1&style=for-the-badge&logo=[react](https://simpleicons.org/icons/react.svg)"/>
+
+
 </p>
 <h1 align="center">
-    <img alt="Github Explorer" title="#Github Explorer" src=".src/assets/github-explorer.png" />
+    <img alt="Github Explorer" title="#Github Explorer" src="./src/assets/github-explorer.png" />
 </h1>
 
 <h4 align="center">
@@ -62,9 +68,9 @@ O layout da aplicação está disponível no Figma:
 ### Web
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Github explorer" title="#Github explorer" src="./assets/github-explorer" width="400px">
+  <img alt="Github explorer" title="#Github explorer" src="./src/assets/github-explorer" width="400px">
 
-  <img alt="Github explorer" title="#Github explorer" src="./assets/github-explorer2" width="400px">
+  <img alt="Github explorer" title="#Github explorer" src="./src/assets/github-explorer2" width="400px">
 </p>
 
 ---
@@ -112,16 +118,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[Axios](https://github.com/axios/axios)**
 -   **[React Dropzone](https://github.com/react-dropzone/react-dropzone)**
 
-## 🦸 Autor
-
-<a href="https://blog.rocketseat.com.br/author/thiago/">
- <img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/380327?s=460&u=61b426b901b8fe02e12019b1fdb67bf0072d4f00&v=4" width="100px;" alt=""/>
- <br />
- <sub><b>Thiago Marinho</b></sub></a> <a href="https://blog.rocketseat.com.br/author/thiago/" title="Rocketseat">🚀</a>
- <br />
-
-[![Twitter Badge](https://img.shields.io/badge/-@tgmarinho-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/tgmarinho)](https://twitter.com/tgmarinho) [![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/tgmarinho/)
-[![Gmail Badge](https://img.shields.io/badge/-tgmarinho@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tgmarinho@gmail.com)](mailto:tgmarinho@gmail.com)
 
 ---
 
