@@ -5,9 +5,10 @@ import api from '../../services/api';
 
 import logoImg from '../../assets/logo.svg';
 
-import { Header , RepositoryInfo, Issues } from './styles';
+import { Header, RepositoryInfo, Issues } from './styles';
+import { useTranslation } from 'react-i18next';
 
-interface RepositoryParams{
+interface RepositoryParams {
   repository: string;
 }
 
@@ -20,23 +21,24 @@ interface Repository {
   owner: {
     login: string;
     avatar_url: string;
-  }
+  };
 }
 
 interface Issue {
   id: number;
   title: string;
   html_url: string;
-  user:{
+  user: {
     login: string;
-  }
+  };
 }
 
 const Repository: React.FC = () => {
   const [repository, setRepository] = useState<Repository | null>(null);
-  const [issues,setIssues] = useState<Issue[]>([]);
+  const [issues, setIssues] = useState<Issue[]>([]);
 
   const { params } = useRouteMatch<RepositoryParams>();
+  const { t } = useTranslation();
 
   useEffect(() => {
     api.get(`repos/${params.repository}`).then(response => {
@@ -54,16 +56,17 @@ const Repository: React.FC = () => {
         <img src={logoImg} alt="Github Explorer" />
         <Link to="/">
           <FiChevronLeft size={16} />
-          Voltar
+          {t('repository.backButton')}
         </Link>
       </Header>
 
-      { repository && (
+      {repository && (
         <RepositoryInfo>
           <header>
             <img
               src={repository.owner.avatar_url}
-              alt={repository.owner.login}/>
+              alt={repository.owner.login}
+            />
             <div>
               <strong>{repository.full_name}</strong>
               <p>{repository.description}</p>
@@ -72,15 +75,15 @@ const Repository: React.FC = () => {
           <ul>
             <li>
               <strong>{repository.stargazers_count}</strong>
-              <span>Stars</span>
+              <span> {t('repository.stars')}</span>
             </li>
             <li>
               <strong>{repository.forks_count}</strong>
-              <span>Forks</span>
+              <span> {t('repository.forks')}</span>
             </li>
             <li>
               <strong>{repository.open_issues_count}</strong>
-              <span>Issues abertas</span>
+              <span> {t('repository.issues')}</span>
             </li>
           </ul>
         </RepositoryInfo>
@@ -94,10 +97,9 @@ const Repository: React.FC = () => {
               <p>{issue.user.login}</p>
             </div>
             <FiChevronRight size={20} />
-         </a>
+          </a>
         ))}
       </Issues>
-
     </>
   );
 };
