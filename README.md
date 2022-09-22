@@ -1,76 +1,52 @@
 <p align="center">
-
-<!--   <img alt="React" src="https://img.shields.io/badge/-React-%2361DAFB">
-
-  <img alt="Typescript" src="https://img.shields.io/badge/-Typescript-blue">
-
-  <img src="https://img.shields.io/static/v1?message=React&color=7159c1&style=for-the-badge&logo=react"/>
-
-  <img src="https://img.shields.io/static/v1?logo=react&message=logo=react&React&color=7159c1&style=for-the-badge&logo=react"/>
-
-  <img src="https://img.shields.io/static/v1?logo=react&message=React&color=7159c1&style=for-the-badge&logo=react"/>
- -->
-
   <img src="https://img.shields.io/static/v1?label=&message=React&color=7159c1&style=for-the-badge&logo=react"/>
 
   <img src="https://img.shields.io/static/v1?label=&message=Typescript&color=007ACC&style=for-the-badge&logo=typescript"/>
 
   <img src="https://img.shields.io/static/v1?label=&message=Javascript&color=7159c1&style=for-the-badge&logo=javascript"/>
-
-
 </p>
 <h1 align="center">
     <img alt="Github Explorer" title="#Github Explorer" src="./src/assets/github-explorer.png" />
 </h1>
 
 <h4 align="center">
-	🚧  Github Explorer ♻️ Concluído 🚀 🚧
+	🚀 Github Explorer ♻️
 </h4>
 
 <p align="center">
- <a href="#-sobre-o-projeto">Sobre</a> •
- <a href="#-funcionalidades">Funcionalidades</a> •
- <a href="#-layout">Layout</a> •
- <a href="#-como-executar-o-projeto">Como executar</a> •
- <a href="#-tecnologias">Tecnologias</a> •
- <a href="#user-content--licença">Licença</a>
+ <a href="#-about">About</a> •
+ <a href="#-features">Features</a> •
+ <a href="#-setup">Setup</a> •
+ <a href="#-technologies">Technologies</a> •
+ <a href="#-author">Author</a>
 </p>
 
 
-## 💻 Sobre o projeto
+## 💻 About
 
-♻️ Github Explorer - Navegue e explore os repositórios dentro do Github
+♻️ Github Explorer - Browse and explore the repositories on Github.
+
+Project developed with React, Typescript, Styled-Components and I18n.
 
 
-Projeto desenvolvido durante o **Bootcamp Gostack** oferecido pela [Rocketseat](https://blog.rocketseat.com.br/).
+## ⚙️ Features
 
----
-
-## ⚙️ Funcionalidades
-
-- [x] Integração com API do Github
-- [x] Usuário realiza a pesquisa dos repositórios
-  - [x] Se encontrado, o repositório é listado e salvo no storage local
-  - [x] Senão é exibida uma mensagem de erro ao usuário
-- [x] Acessar o repositório é possível visualizar:
+- [x] Integration with Github API
+- [x] User performs the repository search
+  - [x] If found, the repository is listed and saved to local storage
+  - [x] Otherwise, an error message is displayed to the user
+- [x] Access to the repository is possible to view:
   - Forks
   - Stars
   - Issues
-  - Todas as Issues são listadas em lista
+  - All Issues are listed in a list
+- [x] User can choose between English and Portuguese languages.
 
----
+## 🌐 Live Example
 
-## 🎨 Layout
+<!-- [You can access a Live Example clicking Here! 😁](https://mern-goals-rafaelnps.herokuapp.com/login) -->
 
-O layout da aplicação está disponível no Figma:
-
-<a href="https://www.figma.com/file/HOCmxfrElzLpI75LdzFLia/Github-Explorer](https://www.figma.com/file/HOCmxfrElzLpI75LdzFLia/Github-Explorer">
-  <img alt="Figma" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
-</a>
-
-
-
-### Web
+## Examples
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="Github explorer" title="#Github explorer" src="./src/assets/github-explorer.png" width="400px">
@@ -78,51 +54,38 @@ O layout da aplicação está disponível no Figma:
   <img alt="Github explorer" title="#Github explorer" src="./src/assets/github-explorer2.png" width="400px">
 </p>
 
----
 
-## 🚀 Como executar o projeto
+## 🚀 Setup
 
-### Pré-requisitos
-
-Ambiente React configurado
-
-#### 🎲 Rodando o projeto
+#### 🎲 Running the project
 
 ```bash
-
-# Clone este repositório
-$ git clone https://github.com/rafanp/github-explorer.git
-
-# Instale as dependências
+# Clone this repository
+$ git clone https://github.com/rafanp/github-explorer
+# Install the dependencies
 $ yarn
-
-# Execute a aplicação
+# Start the application
 $ yarn start
-
-# O servidor inciará na porta:3000 - acesse http://localhost:3000
-
 ```
 
----
+## 🛠 Technologies
 
-## 🛠 Tecnologias
+The following technologies are used during this project development:
 
-As seguintes ferramentas foram usadas na construção do projeto:
-
-#### **Website**  ([React](https://reactjs.org/)  +  [TypeScript](https://www.typescriptlang.org/))
-
+#### **Web Frontend**
+-   **[React](https://reactjs.org/)**
 -   **[React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
--   **[React Icons](https://react-icons.github.io/react-icons/)**
+-   **[TypeScript](https://www.typescriptlang.org/)**
 -   **[Axios](https://github.com/axios/axios)**
--   **[React Dropzone](https://github.com/react-dropzone/react-dropzone)**
+-   **[React Icons](https://react-icons.github.io/react-icons/)**
+-   **[Redux Toolkit](https://redux-toolkit.js.org/)**
+-   **[Styled Components](https://styled-components.com/)**
+-   **[I18next](https://www.i18next.com/)**
 
 
----
+#### **Backend**
+-   **[Integration with Github API](https://docs.github.com/en/rest)**
 
-## 📝 Licença
+## 📝 Author
 
-Este projeto esta sobe a licença [MIT](./LICENSE).
-
-Feito com ❤️ por Rafael Neves [Entre em contato!](https://www.linkedin.com/in/rafaelnps/)
-
----
+Project developed by Rafael Neves [LinkedIn](https://www.linkedin.com/in/rafaelnps/)

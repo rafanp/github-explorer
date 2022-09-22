@@ -1,18 +1,20 @@
 import React, { useState, FormEvent, useEffect } from 'react';
-import {FiChevronRight} from 'react-icons/fi';
+import { FiChevronRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import api from '../../services/api';
 
 import logoImg from '../../assets/logo.svg';
-import {Title, Form, Repositories, Error} from './styles';
+import { Title, Form, Repositories, Error, Header } from './styles';
+import I18n from '../../components/I18n';
+import { useTranslation } from 'react-i18next';
 
 interface Repository {
   full_name: string;
   description: string;
-  owner:{
+  owner: {
     login: string;
     avatar_url: string;
-  }
+  };
 }
 
 const Dashboard: React.FC = () => {
@@ -29,6 +31,8 @@ const Dashboard: React.FC = () => {
     return [];
   });
 
+  const { t } = useTranslation();
+
   useEffect(() => {
     localStorage.setItem(
       '@GithubExplorer:repositories',
@@ -36,16 +40,17 @@ const Dashboard: React.FC = () => {
     );
   }, [repositories]);
 
-  async function handleAddRepository(event: FormEvent<HTMLFormElement>): Promise<void> {
-
+  async function handleAddRepository(
+    event: FormEvent<HTMLFormElement>,
+  ): Promise<void> {
     event.preventDefault();
 
     if (!newRepo) {
-      setInputError('Digite o autor/nome do repositório');
+      setInputError(t('dashboard.errors.typeNameOfRepository'));
       return;
     }
 
-    try{
+    try {
       const response = await api.get<Repository>(`repos/${newRepo}`);
 
       const repository = response.data;
@@ -54,50 +59,52 @@ const Dashboard: React.FC = () => {
       setNewRepo('');
       setInputError('');
     } catch (err) {
-      setInputError('Erro na busca por esse repositório');
+      setInputError(t('dashboard.errors.searchingRepository'));
     }
-
   }
-  // Adição de um novo repositório
-  // Consumir API do Github
-  // Salvar estado
-
 
   return (
-  <>
-    <img src={logoImg} alt="Github Explorer"/>
-    <Title>Explore repositórios no Github</Title>
+    <>
+      <Header>
+        <img src={logoImg} alt="Github Explorer" />
+        <I18n />
+      </Header>
+      <Title>{t('dashboard.title')}</Title>
 
-    <Form hasError={!!inputError} onSubmit = {handleAddRepository}>
-      <input
-        value = {newRepo}
-        onChange = {(e) => setNewRepo(e.target.value)}
-        placeholder="Digite o nome do repositório" />
-      <button type="submit"> Pesquisar </button>
-    </Form>
-
-    {inputError && <Error>{inputError}</Error>}
-
-    <Repositories>
-      {repositories.map(repository => (
-        <Link
-          key={repository.full_name}
-          to={`/repositories/${repository.full_name}`}
-        >
-          <img
-            src={repository.owner.avatar_url}
-            alt={repository.owner.login}
+      <Form hasError={!!inputError} onSubmit={handleAddRepository}>
+        <span>{t('dashboard.description')}</span>
+        <div>
+          <input
+            value={newRepo}
+            onChange={e => setNewRepo(e.target.value)}
+            placeholder={t('dashboard.input.placeholder')}
           />
-          <div>
-            <strong>{repository.full_name}</strong>
-            <p>{repository.description}</p>
-          </div>
+          <button type="submit"> {t('dashboard.search')} </button>
+        </div>
+      </Form>
 
-          <FiChevronRight size={20} />
-        </Link>
-      ))}
-    </Repositories>
-  </>
+      {inputError && <Error>{inputError}</Error>}
+
+      <Repositories>
+        {repositories.map(repository => (
+          <Link
+            key={repository.full_name}
+            to={`/repositories/${repository.full_name}`}
+          >
+            <img
+              src={repository.owner.avatar_url}
+              alt={repository.owner.login}
+            />
+            <div>
+              <strong>{repository.full_name}</strong>
+              <p>{repository.description}</p>
+            </div>
+
+            <FiChevronRight size={20} />
+          </Link>
+        ))}
+      </Repositories>
+    </>
   );
 };
 
